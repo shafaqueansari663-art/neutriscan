@@ -1,0 +1,76 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-root);
+}
+
+.app-shell__header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  height: 52px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-header);
+}
+
+.app-shell__brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.app-shell__brand-accent {
+  color: var(--accent);
+}
+
+.app-shell__nav {
+  display: flex;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.app-shell__nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.app-shell__nav a:hover {
+  color: var(--text);
+  background: var(--bg-hover);
+}
+
+.app-shell__nav a.active {
+  color: var(--accent);
+  background: rgba(45, 138, 84, 0.12);
+}
+
+.app-shell__user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.app-shell__username {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app-shell__main {
+  flex: 1;
+  padding: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

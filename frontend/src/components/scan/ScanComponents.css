@@ -1,0 +1,39 @@
+.scan-camera__live {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.scan-camera__video {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 10px;
+  background: #000;
+  border: 1px solid var(--border);
+}
+
+.scan-camera__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.scan-camera__warming {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.scan-camera__err {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: #b71c1c;
+}
+
+.scan-upload__input {
+  display: none;
+}
+
+.scan-upload {
+  display: inline-flex;
+}

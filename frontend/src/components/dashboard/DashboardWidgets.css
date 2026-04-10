@@ -1,0 +1,223 @@
+.dash-cal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.dash-cal__ring {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--ring) calc(var(--pct) * 1%),
+    var(--border) 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dash-cal__inner {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+}
+
+.dash-cal__value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.dash-cal__label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.dash-cal__meta {
+  flex: 1;
+  min-width: 200px;
+}
+
+.dash-cal__meta p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.dash-cal__meta strong {
+  color: var(--text);
+}
+
+.dash-cal__buffer {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.dash-cal__hint {
+  font-size: 0.85rem !important;
+  line-height: 1.45;
+}
+
+.dash-pie {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1rem 0.5rem;
+}
+
+.dash-pie--empty {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.dash-pie__title {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.dash-pie__chart {
+  width: 100%;
+  height: 220px;
+}
+
+.dash-pie__legend {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.dash-pie__legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.dash-pie__swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.dash-heat {
+  margin-top: 0.5rem;
+}
+
+.dash-heat__head h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.dash-heat__sub {
+  margin: 0 0 0.75rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.dash-heat__sub strong {
+  color: var(--text);
+}
+
+.dash-heat__compact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.35rem;
+  margin: 0 0 0.5rem;
+  padding: 0.45rem 0.65rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.74rem;
+  line-height: 1.35;
+  color: var(--text-muted);
+}
+
+.dash-heat__compact-title {
+  font-weight: 600;
+  color: var(--text);
+  margin-right: 0.15rem;
+}
+
+.dash-heat__compact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  white-space: nowrap;
+}
+
+.dash-heat__compact-dot {
+  color: var(--border-input);
+  user-select: none;
+  font-weight: 300;
+}
+
+.dash-heat__scroll-hint {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.dash-heat__compact .sq {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.sq--0 {
+  background: #dceee0;
+  border: 1px solid var(--border);
+}
+.sq--1 {
+  background: #e6c84a;
+}
+.sq--2 {
+  background: #43a047;
+}
+.sq--3 {
+  background: #e57373;
+}
+
+.dash-heat__calendar {
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.dash-heat__calendar svg {
+  display: block;
+}
+
+/* Match light app chrome (library defaults to dark tooltip). */
+.react-activity-calendar__tooltip {
+  background-color: #ffffff !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 14px rgba(26, 46, 31, 0.1);
+}
+
+.react-activity-calendar__tooltip .react-activity-calendar__tooltip-arrow {
+  fill: #ffffff !important;
+}

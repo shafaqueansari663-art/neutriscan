@@ -1,0 +1,31 @@
+# Dependencies
+frontend/node_modules/
+backend/.venv/
+
+# Environment and secrets
+.env
+**/.env
+*.local
+
+# Build output
+frontend/dist/
+frontend/dist-ssr/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Backend local data (see backend/.gitignore)
+backend/data/
+
+# Logs and OS
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
